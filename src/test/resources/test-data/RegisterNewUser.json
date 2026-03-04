@@ -1,0 +1,21 @@
+{
+  "userData": {
+    "fullNameRegister": "Amine BC",
+    "emailTimestamp": "testEmail_",
+    "password": "132456",
+    "errorMessage": "Your email or password is incorrect!",
+    "daySelect": "1",
+    "monthSelect": "March",
+    "yearSelect": "2020",
+    "firstName": "amine",
+    "lastName": "bcf",
+    "companyName": "code cooperation",
+    "addressOne": "address one input",
+    "addressTwo": "address Two Input",
+    "country": "Canada",
+    "state": "Giza",
+    "city": "Zayed City",
+    "zipcode": "2020",
+    "mobileNumber": "+201125955555"
+  }
+}
