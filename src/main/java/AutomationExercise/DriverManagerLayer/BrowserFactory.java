@@ -82,34 +82,4 @@ public enum BrowserFactory {
     public abstract MutableCapabilities getOptions();
 
 }
-//        private static WebDriver driver;
-//
-//        public static WebDriver getDriver(String browser) {
-//            if (driver == null) {
-//                switch (browser.toLowerCase()) {
-//                    case "chrome":
-//                        ChromeOptions options = new ChromeOptions();
-//                        options.addArguments("--no-sandbox");
-//                        options.addArguments("--start-maximized");
-//                        driver = new ChromeDriver(options);
-//                        break;
-//                    case "firefox":
-//                        driver = new FirefoxDriver();
-//                        driver.manage().window().maximize();
-//                        break;
-//                    case "edge":
-//                        driver = new EdgeDriver();
-//                        driver.manage().window().maximize();
-//                        break;
-//                    default:
-//                        throw  new IllegalArgumentException("Browser not supported");
-//                }
-//            }
-//            return driver;
-//        }
-//        public static void quitDriver() {
-//            if (driver != null) {
-//                driver.quit();
-//                driver = null;
-//            }
-//        }
+

@@ -25,7 +25,7 @@ public class TC01_RegisterTest {
     }
 
 
-
+    @Test
     public void registeringUser(){
         new P1RegistrationPage(getDriver())
                 .clickOnSignupLoginButton()

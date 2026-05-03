@@ -87,8 +87,3 @@ public class P10HomePage {
     }
 }
 
-
-// Scroll down to footer
-// Verify text 'SUBSCRIPTION'
-// Enter email address in input and click arrow button
-// Verify success message  is visible
