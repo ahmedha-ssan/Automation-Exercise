@@ -1,0 +1,323 @@
+{
+  "info": {
+    "_postman_id": "6d01715d-25db-4247-9072-daa92c2950b0",
+    "name": "API_Testing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "25083818",
+    "_collection_link": "https://go.postman.co/collection/25083818-6d01715d-25db-4247-9072-daa92c2950b0?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "getAllProducts",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://automationexercise.com/api/productsList",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "productsList"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "invalidEndpoint",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://automationexercise.com/api/TestErrorCase",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "TestErrorCase"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TestError",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://automationexercise.com/api/productsList",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "productsList"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://automationexercise.com/api/brandsList",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "brandsList"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT To All Brands List Test Error status code",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "https://automationexercise.com/api/brandsList",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "brandsList"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Test Error post to search",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://automationexercise.com/api/searchProduct?search_product=\"top\"",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "searchProduct"
+          ],
+          "query": [
+            {
+              "key": "search_product",
+              "value": "\"top\""
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST To Search Product without search_product parameter",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://automationexercise.com/api/searchProduct",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "searchProduct"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST To Verify Login with valid details",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n   \"email\":\"ahmedhasanis26@gmail.com\",\r\n   \"password\": \"FirstTem3\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://automationexercise.com/api/verifyLogin?email=ahmedhasanis26@gmail.com&password=FirstTim3",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "verifyLogin"
+          ],
+          "query": [
+            {
+              "key": "email",
+              "value": "ahmedhasanis26@gmail.com"
+            },
+            {
+              "key": "password",
+              "value": "FirstTim3"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST To Verify Login without email parameter",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "password",
+              "value": "sad",
+              "type": "text",
+              "uuid": "dd70b37f-bf86-4d98-8788-2224bee32d5b"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://automationexercise.com/api/verifyLogin",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "verifyLogin"
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "Ahmed",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE To Verify Login",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "POST To Verify Login with invalid details",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "POST To Create/Register User Account",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE METHOD To Delete User Account",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "email",
+              "value": "ahmedhasanis226@gmail.com",
+              "type": "text",
+              "uuid": "77223868-eaf0-4d1a-939c-e072bc7e4fe3"
+            },
+            {
+              "key": "password",
+              "value": "1234",
+              "type": "text",
+              "uuid": "739e3fd8-5719-4d48-a03d-9036d00521b2"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://automationexercise.com/api/deleteAccount",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "deleteAccount"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT METHOD To Update User Account",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://automationexercise.com/api/updateAccount",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "updateAccount"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET user account detail by email",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
